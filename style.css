@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.container
+{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0c84e6, #0d5f08d4);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 640px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px;
+    border-radius: 10px;
+}
+.todo-app h2{
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.row > div{
+    background-color: #ededed;
+    border-radius: 30px;
+    display: flex;
+    width: 100%;
+}
+.row input{
+    flex: 1;
+    min-height: 40px;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+}
+.row input:focus{
+    box-shadow: none;
+    border: none;
+    outline: 0;
+}
+.addBtn
+{
+    background-color: #1570e7;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+.addBtn:hover
+{
+    background-color: #172d58;
+    transition: all 0.3s;
+}
+ul#list-container
+{
+    list-style: none;
+    padding: 10px 0px;
+    position: relative;
+}
+
+
+ul#list-container li
+{
+    position: relative;
+    padding-left: 30px;
+    line-height: 2.5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+ul#list-container li::before
+{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(img/uncheck.png);
+    left: 0;
+    background-size: contain;
+}
+
+
+ul#list-container li span{
+    cursor: pointer;
+    text-decoration: none !important;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    top: calc(50% - 15px);
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.3s;
+}
+ul#list-container li span:hover
+{
+    background-color: #ddd;
+}
+
+
+ul#list-container li.checked
+{
+    text-decoration: line-through;
+    color: #555;
+}
+ul#list-container li.checked::before
+{
+    background-image: url(img/check.png);
+}
+
+#filter-box
+{
+    flex: 1;
+    min-height: 40px;
+    background-color: #ededed;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 50px;
+}
