@@ -73,3 +73,12 @@ filterBox.addEventListener('input', function() {
         }
     });
 });
+
+
+document.getElementById('input-box').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        // document.getElementById('addBtn').click();// No 1 solution
+        return addTask(); //no 2 solution
+    }
+});
+
