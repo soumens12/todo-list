@@ -74,18 +74,12 @@ filterBox.addEventListener('input', function() {
 });
 
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> e150529c04a9be0de4893150e6d1a112714bbd77
 document.getElementById('input-box').addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
         // document.getElementById('addBtn').click();// No 1 solution
         return addTask(); //no 2 solution
     }
 });
-<<<<<<< HEAD
 
-=======
->>>>>>> e150529c04a9be0de4893150e6d1a112714bbd77
+
+
