@@ -14,7 +14,6 @@ function addTask (){
         let span = document.createElement("span");
         span.innerHTML= "\u00d7";
         li.appendChild(span);
-        
     }
 
     inputBox.value="";
@@ -38,7 +37,6 @@ listContainer.addEventListener("click", function(e){
 
 
 
-
 function finalizeEdit(li, newValue) {
     li.innerHTML = newValue; // Set the new value back to the LI
     let span = document.createElement("span");
@@ -55,6 +53,7 @@ function saveData(){
 function showTask(){
     listContainer.innerHTML = localStorage.getItem("data")
 }
+
 
 showTask();
 
@@ -75,10 +74,18 @@ filterBox.addEventListener('input', function() {
 });
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> e150529c04a9be0de4893150e6d1a112714bbd77
 document.getElementById('input-box').addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
         // document.getElementById('addBtn').click();// No 1 solution
         return addTask(); //no 2 solution
     }
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> e150529c04a9be0de4893150e6d1a112714bbd77
